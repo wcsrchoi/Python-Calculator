@@ -6,7 +6,7 @@ count = 1
 
 while (True):
     print("Please enter numbers that you want to calculate.\n"
-          "Press 'q' to quit the program"
+          "Press 'q' to quit the program.\n"
           "Enter 'd' when you are done entering numbers.")
     while (True):
         number = input("Enter number {}: ".format(count))
@@ -23,7 +23,7 @@ while (True):
             continue
         count += 1
 
-    print("1. Addition\n"
+    print("\n1. Addition\n"
           "2. Subtraction\n"
           "3. Multiplication\n"
           "4. Division\n"
@@ -35,3 +35,7 @@ while (True):
         print(addition(numbers))
     elif choice == '2':
         print(subtraction(numbers))
+    elif choice == '3':
+        print(multiplication(numbers))
+    elif choice == '4':
+        print(division(numbers))

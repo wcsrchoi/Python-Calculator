@@ -12,12 +12,21 @@ def subtraction(numbers):
     return value
 
 
-def multiplication(x, y):
-    return x / y
+def multiplication(numbers):
+    value = 1
+    for i in numbers:
+        value *= i
+    return value
 
 
-def division(x, y):
-    return x / y
+def division(numbers):
+    value = numbers.pop(0)
+    for i in numbers:
+        try:
+            value /= i
+        except:
+            return "\nYou cannot deivide numbers by 0!\n"
+    return value
 
 
 def exponential(x, y):
